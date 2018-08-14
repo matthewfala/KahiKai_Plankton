@@ -1,15 +1,15 @@
 ﻿<ion-view view-title="Dichotomous Key">
     <link rel="stylesheet" type="text/css" href="css/dichotomous.css">
     
-    <ion-pane style="position: absolute; top: calc(100% - 204px); height: 204px">
-        <div  class="dBottomBox">
-            <h1> CHOOSE WHAT MATCHES YOUR PLANKTON'S APPEARANCE</h1>
-            <div class="button-bar" >
+    <div style="position: absolute; bottom: 2.5em; width:100%; z-index: 5">
+        
+            
+            <div class="button-bar" style="width:90%; margin-left:auto; margin-right:auto" >
                 <a class="button button-calm" ng-click="back()">BACK</a>
                 <a class="button button-assertive" ng-click="restart()">RESTART</a>
             </div>
-        </div>
-    </ion-pane>
+        
+    </div>
 
     
     <ion-content ng-show="showScreenBool(0)" style="height: 100%">

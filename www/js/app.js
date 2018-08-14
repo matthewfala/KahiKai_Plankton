@@ -121,6 +121,17 @@ angular.module('starter', ['ionic', 'ngAnimate', 'starter.controllers'])
         }
     })
 
+    .state('app.dichotomousIntro', {
+        url: '/dichotomousIntro',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/dichotomousIntro.html',
+                controller: 'dichotomousCtrl'
+            }
+
+        }
+    })
+
     .state('app.dichotomous', {
         url: '/dichotomous',
         views: {

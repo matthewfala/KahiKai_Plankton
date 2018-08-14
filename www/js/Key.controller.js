@@ -6,6 +6,7 @@
     $scope.screen = 0;
     // Current question
     $scope.currentQ = qSeed;
+
     // Question history
     var history = [qSeed];
 
