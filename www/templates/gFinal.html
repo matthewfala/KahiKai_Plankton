@@ -1,4 +1,4 @@
-﻿<ion-view view-title="Card Match Home" ng-init="endGame()" >
+﻿<ion-view view-title="Card Match Home"  enable-menu-with-back-views="true">
     <link rel="stylesheet" type="text/css" href="css/game.css">
 
     <ion-content >
@@ -38,14 +38,14 @@
 
                         <h5> Play again, or learn about the plankton you just matched.</h5>
                         <br/>
-                        <a ng-click="{{newGame()}}" ng-href='#/app/gHome' class="button button-calm" menu-close> REMATCH </a>
-                        <a ng-click="{{newGame()}}" ng-href='#/app/memory' class="button button-positive" menu-close> LEARN PLANKTON </a>
+                        <a ng-href='#/app/gHome' class="button button-calm" menu-close> REMATCH </a>
+                        <a ng-href='#/app/memory' class="button button-positive" menu-close> LEARN PLANKTON </a>
 
                     </div>
 
 
                 </div>
-
+                
             </div>
 
 
