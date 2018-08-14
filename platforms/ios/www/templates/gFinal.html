@@ -1,0 +1,108 @@
+﻿<ion-view view-title="Card Match Home" ng-init="endGame()" >
+    <link rel="stylesheet" type="text/css" href="css/game.css">
+
+    <ion-content >
+        <br />
+
+        <div class="card">
+            <div class="congrats">
+                
+
+                <!--<h2 style="text-align: center"> High Score: 0 </h2> <p style="text-align: center">  highscore temporarily unavailible</p> -->
+                
+                <div class="aqua-border" style="">
+                    <div   class="cards" style="position: relative; float:left; margin:20px; width: {{deviceWidth/3}}px; height:{{deviceWidth/3}}px" >
+                    
+                        <!--front of card-->
+                        <div style="position:absolute; left:0px; top:0px;  -webkit-transform:  rotateY( 180deg ) " class="back-setup">
+
+                            <img src="img/KeahiKai.png" style="width: {{deviceWidth/3}}px; height:{{deviceWidth/3}}px; left:0px; top:0px" />
+                    
+                        </div>
+               
+            
+                        <div style="position:absolute; left:0px;top:0px; background-color: aqua" class="front-setup" >
+
+                            <img src="img/card_icon/medium/foram.jpg" style="width: {{deviceWidth/3}}px; height:{{deviceWidth/3}}px; left:0px; top:0px" />
+                        </div>
+
+                    </div> <!-- end of card -->
+
+                    <br />
+
+                    <div class="congratsRightBox">
+
+                        <h1 style="text-align:left"> <b> Great Job! </b></h1>
+
+                        <h4 style="padding: 20px 0 0px 0; text-align:justify"> You just matched {{globalTotalCards}} plankton cards in <b> {{gameMinutes}} minutes </b> and <b> {{gameSeconds}} seconds.</b> </h4>
+
+                        <h5> Play again, or learn about the plankton you just matched.</h5>
+                        <br/>
+                        <a ng-click="{{newGame()}}" ng-href='#/app/gHome' class="button button-calm" menu-close> REMATCH </a>
+                        <a ng-click="{{newGame()}}" ng-href='#/app/memory' class="button button-positive" menu-close> LEARN PLANKTON </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="card">
+
+            <div class ="scoreBoard">
+                <h2> Scoreboard <span class="grayText" ng-if="newHighscore"> - New Best Time! </h2>
+                
+                 
+                <div class = "fastest">
+                    <h3 > <b> Fastest Time: </b> </h3>
+                    <hr/>
+                    <h3> {{hsMinutes}} Minutes and  {{hsSeconds}} Seconds
+                    </h3>
+                </div>
+
+
+                <div class = "matches" >
+                    <h3 > <b> Speed Progress: </b> </h3>
+                    <hr/>
+
+                    <table> 
+                        <tr> 
+                            <th> Date </th>
+                            <th> Fastest Times </th>
+                        </tr>
+
+                        <tr ng-repeat="oldBest in highscores">
+                            <td> {{oldBest.date}} </td>
+                            <td> {{oldBest.min}} mins and {{oldBest.sec}} secs </td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </div>
+
+            <!-- Highscore 
+            <div class="info">
+
+
+                
+                <div class="leftBox">
+                    <h3 > <b> Fastest Match: </b> </h3>
+                    
+                </div>
+                <div class="rightBox">
+                    <p style = "padding:20px; text-align:justify"> {{hsMinutes}} minutes and {{hsSeconds}} seconds! </p>
+                    <h2 ng-if="newHighscore"> You just set the fastest card match time! </h2>
+                </div>
+
+            </div>
+            -->
+
+        </div>
+    </ion-content>
+
+</ion-view>

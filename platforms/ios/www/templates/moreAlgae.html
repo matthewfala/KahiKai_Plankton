@@ -1,0 +1,27 @@
+﻿
+
+<ion-view view-title="{{moreCard.taxonomic}}" ng-init="onload()">
+    
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="css/moreInfo.css">
+
+    </head>
+
+    <ion-pane>
+        <div style="background-color: black">
+            <div style="position: absolute; top: 0; width: 100%">
+                <element ng-bind-html="morePane"></element>
+            </div>
+            <div style="position: absolute; top: 0; height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch">
+                <div style="visibility: hidden; margin-bottom: 0;">
+                    <element ng-bind-html="morePane"></element>
+                </div>
+                <div style="background-color: white">
+                <element ng-bind-html="moreContent"></element>
+                </div>
+            </div>
+        </div>
+    </ion-pane>
+
+</ion-view>

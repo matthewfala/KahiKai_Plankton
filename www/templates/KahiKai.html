@@ -1,0 +1,69 @@
+﻿<ion-view view-title='Kahi Kai'>
+    <style>
+        high {
+            margin-left: auto;
+            margin-right: auto;
+            overflow: auto;
+            width: .66%;
+            text-align: center;
+            padding: 10px;
+            border-style: solid;
+            border-width: 1px;
+            box-shadow: salmon 10px 10px inset;
+            border-color: salmon;
+        }
+
+        medium {
+            margin-left: auto;
+            margin-right: auto;
+            overflow: auto;
+            width: .66%;
+            text-align: center;
+            padding: 10px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: aqua;
+        }
+    </style>
+
+    <ion-content style="z-index:1">
+        <div class="card">
+        
+                <div class="item item-text-wrap">
+                    <br />
+                    <h1 style="text-align:center"> Our Goal </h1>
+                    <br/>
+                    <div style="margin-left: auto; margin-right: auto; text-align: justify; width: {{deviceWidth * 2/3}}px; font-size:20px; line-height: 1.25em" >
+                        <em>Kahi Kai</em> is a non-profit organization founded in 2009 by biological researchers from the University of Hawaiʻi. The mission of Kahi Kai is to share knowledge with students from Hawaii and around the world about the local and global threats that challenge the health of our oceans, to solidify the importance of ocean conservation in their minds, and to share the concept of sustainable living. <br /> <br/> <b></b> <br/> We used CellScopes to image all plankton, a technology developed at UC Berkeley, which converts a standard iPhone or iPad into a fully functional microscope. Find out more about the project at cellscope.berkeley.edu. The collaboration between CellScope and Kahi Kai enables us to provide children hands-on experience in the field coupled with appealing images.
+                    </div>
+                    <br />
+
+
+                    <h1 style="text-align:center"> Our Team </h1>
+                    <br />
+
+                   <!-- One Person-->
+                    <div ng-repeat="person in team" > 
+                    <div style="margin-left: auto; margin-right: auto; overflow: auto; width: 66%; text-align:center; padding: 10px; border-style: solid; border-width: 1px; border-color: {{person.color}}">
+                        
+                        <img ng-src="{{person.pic}}" style="padding: 10px; float:left; width: {{deviceWidth/5}}px"/>
+                        <h2 align="right" style="margin-top: 10px;  text-align:left; margin-top: 10px; font-size:18px">{{person.name}}</h2>
+                        <h3 align="right" style="text-align:left; margin-bottom: 10px;"> {{person.add}} </h3>
+                        <p align="right" style="text-align:left" > {{person.content}} </p>
+                            
+                    </div>
+                    <br />
+                    </div>
+
+                    <br />
+                    <br />
+                    <h2 style="text-align:center"> <b>Contact:</b> info@kahikai.org </h2>
+                    <h2 style="text-align:center" h-ref="www.kahikai.org"> <b>Web: </b>  www.kahikai.org </h2>
+                    
+
+
+            </div>
+        </div>
+    </ion-content>
+
+</ion-view>

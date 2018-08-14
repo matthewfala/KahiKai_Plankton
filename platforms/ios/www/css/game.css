@@ -1,0 +1,415 @@
+﻿
+.flipCard {
+    position: fixed;
+}
+
+.flipCard {
+}
+
+
+.front {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: transform .5s linear 0s;
+}
+
+
+    .front.flipped {
+        -webkit-transition: .5s linear all;
+        -webkit-transform: rotateY( -180deg );
+    }
+
+
+.back {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: transform .5s linear 0s;
+}
+
+    .back.flipped {
+        -webkit-transition: .5s linear 0s;
+        -webkit-transform: rotateY( -180deg );
+    }
+
+/* class only reg if myAnimate = true*/
+/* .flipCard > front.animate {
+transform: perspective( 600px ) rotateY( -180deg );
+}*/
+
+/*Score Circle*/
+.score {
+    position: fixed;
+    background-color: aquamarine;
+    border-radius: 50%;
+    opacity: .9;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+@font-face {
+    font-family: 'OswaldR';
+    src: url('../font/Oswald-Regular.ttf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+#scoreFont {
+    font-family: 'OswaldR';
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@-webkit-keyframes pulseAnimation {
+    0% {
+        opacity: .9;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .9;
+    }
+}
+
+@-webkit-keyframes pulseAni1 {
+    0% {
+        opacity: .5;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+@-webkit-keyframes pulseAni2 {
+    0% {
+        opacity: .9;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: .9;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    85% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: .75;
+    }
+
+    100% {
+        opacity: .9;
+    }
+}
+
+.pulse {
+    position: fixed;
+    background-color: aquamarine;
+    border-radius: 50%;
+    display: block;
+    -webkit-animation: pulseAnimation 3s infinite;
+}
+
+.pulse1 {
+    position: fixed;
+    background-color: azure;
+    border-radius: 50%;
+    display: block;
+    -webkit-animation: pulseAni1 4s infinite;
+}
+
+.pulse2 {
+    position: fixed;
+    background-color: lightsalmon;
+    border-radius: 50%;
+    display: block;
+    -webkit-animation: pulseAni2 12s infinite;
+}
+
+@-webkit-keyframes finalAct {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    50% {
+        left: -1000px;
+    }
+
+    51% {
+        right: -2000px;
+    }
+
+    100% {
+        right: 1000px;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.finalAct {
+    -webkit-animation: finalAct 2s linear;
+}
+
+.fade.ng-hide {
+    opacity: 0;
+}
+
+.fade.ng-show {
+    opacity: .7;
+}
+
+.fade.ng-hide-remove,
+.fade.ng-hide-add {
+    display: block !important;
+}
+
+.fade.ng-hide-remove {
+    -webkit-transition: all linear 1000ms;
+}
+
+.fade.ng-hide-add {
+    -webkit-transition: all linear 500ms;
+}
+
+
+/* GAME HOME */
+
+@-webkit-keyframes rotateYf {
+    to {
+        -webkit-transform: rotateY(360deg);
+    }
+}
+
+@-webkit-keyframes rotateYb {
+    to {
+        -webkit-transform: rotateY(540deg);
+    }
+}
+
+
+.front-setup {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transform: rotateY( 0deg );
+    -webkit-backface-visibility: hidden;
+    -webkit-animation: rotateYf 4s infinite;
+}
+
+
+.back-setup {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-backface-visibility: hidden;
+    -webkit-animation: rotateYb 4s infinite;
+}
+
+.aqua-bordehir {
+    padding: 25px;
+    
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.info {
+
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right:auto;
+
+    display: table;
+    width: 90%;
+    margin-top: 1.5em;  
+}
+
+.leftBox {
+
+    font-family: 'Poppins', sans-serif;
+    
+
+    display: table-cell;
+    text-align: middle;
+
+    width: 30%;
+    background-color: #5D9CEC;
+
+}
+
+.rightBox {
+
+    vertical-align: middle; 
+    display: table-cell;
+
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-right: 5%;
+    padding-left: 5%;
+
+    /*width: 66%;*/
+    height: 100%;
+    background-color: #4A89DC;
+    
+}
+
+.leftBox > h3 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: block;
+
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    margin: 2em;
+    margin-bottom: 0em;
+
+
+    
+}
+
+.leftBox > h2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: .7em;
+    margin: 0;
+    margin-bottom: 3em;
+}
+
+.rightBox > p {
+    color: white;
+    font-size: 1.25em;
+    
+    font-weight: normal;
+    text-align: justify;
+
+    margin-left: 0;
+    padding: 0;
+
+}
+
+.rightBox > h2 {
+    color: white;
+    margin-left: 1em;
+
+    font-size: 1.25em;
+    line-height: 1.25em;
+    font-weight: normal;
+    text-align: justify;
+    
+}
+
+.scoreBoard {
+
+    margin-top: 2em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+
+}
+.congratsRightBox {
+    display: inline-block;
+    margin-left: 5%;
+    width: 40%;
+
+}
+
+.congrats > .aqua-border > h1 {
+    display: inline-block;
+    padding-right: 4em;
+    padding-left: 1em;
+    line-height: 2em;
+    border-bottom: 3px solid #ddd;
+    margin-bottom: .5em;
+}
+
+.congrats {
+    width: 90%;
+    margin: 1em auto 3em auto;
+}
+
+.scoreBoard > h1 {
+    display: inline-block;
+}
+
+.scoreBoard > h2 {
+    text-align: left;
+    padding-left: 1em;
+    font-weight: bold;
+    line-height: 3em;
+    border-bottom: 3px solid #ddd;
+}
+
+.scoreBoard > h3 {
+
+}
+
+.scoreBoard > .fastest {
+    float: left;
+    margin: 2em;
+    text-align: left;
+    display: inline-block;
+}
+
+.scoreBoard > .matches {
+    margin: 2em;
+    float: left;
+}
+
+.scoreBoard > table {
+    margin-top: 1em;
+    width: 100%;
+}
+
+.grayText {
+    color: #777;
+}
+
+th {
+    font-weight: bold;
+}
+td, th {
+    border: solid 1px #eee;
+    text-align: left;
+    font-size: 1.5em;
+    padding: 8px;
+    padding-right: 10%;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+.matches > hr , .fastest > hr {
+    border: solid 1px aqua;
+}
+

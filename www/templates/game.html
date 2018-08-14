@@ -1,0 +1,56 @@
+﻿<body ng-app="ngAnimate" ng-init="newGame()">
+    <ion-view cache-view="false" view-title="Card Match">
+        <link rel="stylesheet" type="text/css" href="css/game.css">
+
+
+
+        <div class="scoreBoard">
+            <div class="pulse2" style="left: {{deviceWidth/2 - scoreCircWH/2-10}}px; top: {{deviceHeight/6 - scoreCircWH/2-10}}px; width: {{scoreCircWH+20}}px; height: {{scoreCircWH+20}}px"></div>
+
+            <div class="pulse" style="left: {{deviceWidth/2 - scoreCircWH/2}}px; top: {{deviceHeight/6 - scoreCircWH/2}}px; width: {{scoreCircWH+10}}px; height: {{scoreCircWH+10}}px"></div>
+            <div class="pulse1" style="left: {{deviceWidth/2 - scoreCircWH/2-10}}px; top: {{deviceHeight/6 - scoreCircWH/2-10}}px; width: {{scoreCircWH+10}}px; height: {{scoreCircWH+10}}px"></div>
+
+
+            <div class="score" style="left: {{deviceWidth/2 - scoreCircWH/2}}px; top: {{deviceHeight/6 - scoreCircWH/2}}px; width: {{scoreCircWH}}px; height: {{scoreCircWH}}px">
+                <div id="scoreFont" style="font-size: {{deviceHeight/7}}px; line-height: {{deviceHeight/7}}px">{{score}}</div>
+            </div>
+        </div>
+
+        <!--Batch make Cards-->
+        <div ng-repeat="card in hand" class="flipCard"
+             ng-class="{finalAct: bfinalAct}"
+             ng-model="hand"
+             style="width: {{cardWH}}px; height:{{cardWH}}px; left:{{card.x}}px; top:{{card.y}}px;"
+             ng-click="cardClicked(card)">
+
+            <div class="back"
+                 ng-class="{flipped:card.bShown}"
+                 style="background-color:aqua">
+
+                <img src="img/card_icon/medium/{{card.pic}}"
+                     style="width: {{cardWH}}px; height:{{cardWH}}px; left:0px; top:0px" />
+            </div>
+
+            <!--front of card-->
+            <div ng-class="{flipped:!card.bShown}"
+                 class="front">
+
+                <img class="img"
+                     src="img/KeahiKai.png"
+                     style="width: {{cardWH}}px; height:{{cardWH}}px;">
+
+
+            </div>
+            <!--For Debug Assistance Remobe ng-hide !-->
+            <ion-item class="fade" ng-model="button.enable" ng-hide="!button.enable" style="position:absolute; bottom:0; text-align:center; letter-spacing: 1px"> {{card.name.slice(0,nameLength-1)}}{{addDot(card.name)}} </ion-item>
+
+
+        </div> <!-- end of card -->
+        <!-- bottom button -->
+        <button class={{button.style}} ng-click="button.clicked(button.enable)" style="position:fixed; bottom: {{deviceHeight/15}}px; letter-spacing: 5px"> {{button.content}} </button>
+        <br />
+        <br />
+        <br />
+        <!-- <a ng-href='#/app/gFinal' class="button button-full button-calm">To end</a>   //for debug-->
+    </ion-view>
+</body>

@@ -1,0 +1,24 @@
+
+
+
+<ion-view view-title="Gallery">
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/gallery.css">
+	</head>
+
+	<ion-pane>
+		<div class="container">
+			<div class="gTitle">{{subject}}</div>
+		</div>
+	</ion-pane>
+
+	<ion-content>
+
+		<div class="gallery">
+			<div ng-repeat="item in galleryItems" ng-init="photo({{item.name}})" style= "background-image: 'img/gallery/{{item.img}}'">
+			</div>
+		</div>
+
+	</ion-content>
+</ion-view>

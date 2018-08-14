@@ -1,0 +1,47 @@
+﻿
+<ion-view view-title="Browse Plankton">
+
+    <script>
+        delCards(shownCards);
+        addSort(cards, shownCards, box.target, box.filter);
+    </script>
+
+    <ion-nav-buttons side = "right" ng-show="true">
+        <button class="button button-icon button-clear ion-toggle-filled" ng-click="openPopover($event)"> Select </button>
+    </ion-nav-buttons>
+
+
+    <ion-content overflow-scroll="true" style="background:url('img/KeahiKai_noTxt.png') no-repeat center center">
+        <!-- batch create cards -->
+        <div ng-repeat="card in displayArray">
+            <div class="list card">
+                <div class="item item-avatar">
+                    <img style="margin-top:2%" ng-src="img/card_icon/icon/icon_{{card.pic}}">
+                    <h2 style="font-size:2.5em; text-transform:uppercase"><b> {{card.name}} </b></h2>
+                    <p>{{card.taxonomic}} {{moreCard.name}}</p>
+
+                </div>
+
+                <div class="item item-body">
+                    <div style="float:left; width:40%">
+                        <a ng-click="moreInfo(card)" ng-href = "#/app/memory/moreAlgae"> <!-- add href = "#/app/memory/moreAlgae"-->
+                            <img ng-src="img/card_icon/medium/{{card.pic}}" style="margin: 5%; float:left; width:100%; position: static;">
+                        </a>
+                    </div>
+
+                    <div style="float: right; margin-top:1%; width: 50%">
+                        <h3 style="font-size: 1.2em"> {{card.name}}</h3>
+                        <h3> Food Web Position: </h3>
+                        <p style="font-size:16px"> {{card.web}} </p>
+                        <h3> Description: </h3>
+                        <p style="font-size:16px"> {{card.description}} </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </ion-content>
+
+</ion-view>
+

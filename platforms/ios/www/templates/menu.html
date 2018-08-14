@@ -1,0 +1,73 @@
+<head>
+    <style>
+        ion-item {
+            background-color: black;
+            text-align: center;
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content drag-content="false">
+        <ion-nav-bar class="bar-positive">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+
+
+
+    <ion-side-menu side="left">
+
+        <ion-content overflow-scroll="false">
+            <a menu-close href="#/app/KahiKai">
+                <img src="img/KeahiKai.png" style="margin-left: auto; margin-right:auto; padding:30%; width: 100%" />
+            </a>
+            <ion-list>
+                <div class="item item-divider"> Reference </div>
+                <ion-item menu-close href="#/app/about">
+                    About Plankton
+                </ion-item>
+                <ion-item menu-close href="#/app/memory">
+                    Browse Plankton
+                </ion-item>
+                <ion-item menu-close href="#/app/dichotomous">
+                    Key
+                </ion-item>
+                
+                <!-- 
+                    
+                <ion-item menu-close href="#/app/gallery">
+                    Gallery
+                </ion-item>
+
+                 -->
+
+                <div class="item item-divider"> Interactive Learning </div>
+                <ion-item menu-close href="#/app/gHome">
+                    Card Match
+                </ion-item>
+
+
+                <div class="item item-divider"> Kahi Kai </div>
+
+                <!--
+                <ion-item menu-close href="#/app/myPlankton">
+                    My Plankton
+                </ion-item>
+                -->
+
+                <ion-item menu-close href="#/app/KahiKai">
+                    About KahiKai
+                </ion-item>
+
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

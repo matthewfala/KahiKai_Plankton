@@ -1,0 +1,117 @@
+﻿<!-- POPOVER-->
+
+    <style>
+        .popover {
+            height: 55%;
+            width: 400px;
+            min-width: 40%;
+            max-width: 100%
+        }
+
+    </style>
+    <ion-popover-view>
+
+        <ion-header-bar>
+            <h2> Plankton Selectors</h2>
+        </ion-header-bar>
+
+        <ion-content>
+            <!--
+            <div class="list">
+
+                <label class="item item-input item-select">
+                    <div class="input-label">
+                        Sort By
+                    </div>
+                    <select>
+                        <option>Alfabet</option>
+                        <option selected>Alphabet</option>
+                        <option>Alphanumeric</option>
+                    </select>
+                </label>
+
+            </div>
+            -->
+
+            <div>
+                <button style="float:left" class="button button-light" ng-click="toggleAll(true)"> SELECT ALL</button>
+                <button style="float:right" class="button button-light" ng-click="toggleAll(false)"> DESELECT ALL</button>
+            </div>
+            <br clear="all" />
+            <div class="list">
+
+
+                <!-- TAXINOMY -->
+                <div class="item item-divider">
+                    Taxinomy
+
+                    <p> sort by taxonomy: </p>
+                    <label style="float:right" class="toggle">
+                        <input type="checkbox" ng-click="revTax()">
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </label>
+                </div>
+                <div class="item">
+
+                    <div class="list">
+                        <ion-checkbox ng-repeat="checkbox in taxonomicFilters" ng-model="checkbox.checked" ng-click="filterClicked(checkbox)">
+                            {{checkbox.text}}
+                        </ion-checkbox>
+                    </div>
+                </div>
+
+                <!-- FOOD WEB -->
+                <div class="item item-divider">
+                    Food Web
+                </div>
+                <div class="item">
+
+                    <div class="list">
+                        <ion-checkbox ng-repeat="checkbox in foodwebFilters" ng-model="checkbox.checked" ng-click="filterClicked(checkbox)">
+                            {{checkbox.text}}
+                        </ion-checkbox>
+                    </div>
+                </div>
+
+                <!-- LIFESTAGE -->
+                <div class="item item-divider">
+                    Life Stage
+                </div>
+                <div class="item">
+
+                    <div class="list">
+                        <ion-checkbox ng-repeat="checkbox in lifestageFilters" ng-model="checkbox.checked" ng-click="filterClicked(checkbox)">
+                            {{checkbox.text}}
+                        </ion-checkbox>
+                    </div>
+                </div>
+
+                <!-- HABITAT -->
+                <div class="item item-divider">
+                    Habitat
+                </div>
+                <div class="item">
+
+                    <div class="list">
+                        <ion-checkbox ng-repeat="checkbox in habitatFilters" ng-model="checkbox.checked" ng-click="filterClicked(checkbox)">
+                            {{checkbox.text}}
+                        </ion-checkbox>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </ion-content>
+
+    </ion-popover-view>
+</script>
+
+<!--Popover databind truefalse checkbox and checked variable-->
+<div class="box">
+    <pre ng-bind="filterCheck|json"></pre>
+</div>

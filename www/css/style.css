@@ -1,0 +1,61 @@
+/* Empty. Add your own CSS if you like */
+
+@font-face {
+    font-family: 'Trade Gothic LT';
+    font-weight: bold;
+    src: url('../font/kahiFont/Trade Gothic LT Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Trade Gothic LT';
+    font-weight: lighter; 
+    src: url('../font/kahiFont/Trade Gothic LT Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Trade Gothic LT';
+    font-weight: normal;
+    src: url('../font/kahiFont/Trade Gothic LT.ttf') format('truetype');
+}
+
+
+
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: bold;
+    src: url('../font/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: normal;
+    src: url('../font/Poppins-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    src: url('../font/PlayfairDisplay-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    src: url('../font/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+
+
+/*
+* {
+    font-family: 'Trade Gothic LT';
+}
+
+.header-item {
+    font-weight: bold;
+    color: red;
+    font-size: 1000px
+}
+    */

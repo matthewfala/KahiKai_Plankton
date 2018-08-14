@@ -1,0 +1,230 @@
+<ion-view view-title="Kahi Kai - Marine Life">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+            float: left;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+            float: right;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        .aqua-border-sharp {
+            border: solid 1px aqua;
+            border-radius: 5px;
+        }
+
+        hr.aqua-border-sharp {
+            color: aqua;
+        }
+
+        h1 {
+            font-size: 1.5em;
+        }
+    </style> 
+
+    <ion-content direction="y" overflow-scroll="true" has-bouncing="true">
+
+        <div class="card" style="padding-bottom: 1em">
+
+            <div class="item item-text-wrap">
+                <div>
+                    
+                    <div style="overflow:auto; padding:20px; margin-bottom: 20px; background-color:black; border-radius: 5px">
+                        
+                        <hr style="color:white" />
+                        <a ng-click="moreInfo('Bristle worm (Sabellariidae)')"  ng-href = "#/app/memory/moreAlgae"><img style="padding: 10px; float:left; width:{{deviceWidth / 4}}px" src="img/card_icon/medium/bristle_worm.jpg" /></a>
+                        <a ng-href="#/app/KahiKai"><img style="border-radius: 5px; padding:20px; margin-left:9%; margin-top: 5%; background-color:white; width: 25%" src="img/KeahiKai.png" /></a>
+                        <img style="position:absolute; right:0px; top: 3%; width: 30%;" src="img/PlanktonQuestion.png" />
+
+                        <br />
+                        <br clear="all" />
+                        <h1 style="z-index: -1; color:white; padding: 10px; text-align:center; letter-spacing: .15em">WHAT ARE PLANKTON ?</h1>
+                        <a ng-href="#/app/memory" style="text-decoration: none">
+                            <div style="overflow: auto; margin-left:auto; margin-right:auto; width:{{deviceWidth*2/3}}px">
+
+                                <p style="z-index: 2; color:#838487; text-align: justify; margin-top: 5px">Plankton are some of the most diverse and abundant organisms on the planet. The term plankton comes from the Greek word "planktos" meaning wanderer or drifter. Hence, plankton describes organisms that live in the water and cannot swim against major currents.</p>
+                                <hr style="color:#838487" />
+                              
+                            </div>
+                        </a>
+                        <br />
+                        <a ng-click="moreInfo('horseshoe worm')" ng-href="#/app/memory/moreAlgae"><img style="float:left; width:{{deviceWidth / 4}}px" src="img/card_icon/medium/phoronid.jpg" /> </a>
+                        <!--<img style="display:inline-block;  width:{{deviceWidth / 4}}px" src="img/card_icon/diatom.jpg" /> -->
+                        <a ng-click="moreInfo('amphipod')" ng-href="#/app/memory/moreAlgae"><img style="float: right; width:{{deviceWidth / 4}}px" src="img/card_icon/medium/amphipod.jpg" /></a>
+
+                        <br />
+                    </div>
+
+                    
+                    <hr />
+                    
+                </div>
+
+
+                <br />
+                <h2>PLANKTON COME IN TWO TYPES:</h2>
+                <ol class="list">
+                    <li class="item">
+                        <h3>1. Phytoplankton (plant-like)</h3>
+                        <p>Plant-like plankton are known as phytoplankton. Each phytoplankton is a single cell or a chain of cells.</p>
+                        <p>Phytoplankton are microscopic and do not look anything like plants that grow on land, they lack roots, stems, and leaves. But like terrestrial plants, they are able to capture sunlight and convert it into energy. This process, called photosynthesis, also makes the oxygen that we need to breath.</p>
+                        <p>Phytoplankton are extremely productive considering their small size - over a million phytoplankton can fit in a teaspoon of seawater.</p>
+                        <p>However, when conditions are just right, phytoplankton can grow in such large numbers that they are able to generate a bloom that can be seen from space.</p>
+                    </li>
+                    <li class="item">
+                        <h3>2. Zooplankton (animal-like)</h3>
+                        <p>Animal-like organisms that drift in the ocean are called zooplankton. Zooplankton are larger than phytoplankton, ranging from microscopic sizes to jellyfish that can grow to be several meters in length.</p>
+                        <p>Some large zooplankton can move under their own power, migrating towards the surface water at night to feed on phytoplankton or smaller zooplankton and sinking to deeper waters during the day to avoid being eaten by larger animals. There are two types of zooplankton: temporary and permanent.</p>
+                        <ul style="margin-left: 25px; list-style: none; list-style-type: disc">
+                            <li>
+                                <p><b>Temporary zooplankton (meroplankton) </b> only spend part of their life cycle as plankton. Certain meroplankton, such as crabs and fish, are plankton only when they are young larvae. When they grow up, they transform into completely different forms.
+                                </p>
+                            </li>
+                            <li>
+                                <p><b>Permanent zooplankton (holoplankton) </b> spend their whole life as plankton. For example, copepods stay as zooplankton their entire lives and are considered the most abundant animals in the ocean. </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <div style="padding: 25px; background-color:black; border-radius: 5px">
+                    <h1 style="color:white; text-align:justify">Did You Know...</h1>
+                    <br />
+                    <ul>
+                        <li style="color:white">Phytoplankton produce about 50% of the oxygen that we breathe every day.</li>
+                        <li style="color: #c0c0c0">The weight of all the plankton in the oceans is greater than that of all the fish, dolphins and whales put together.</li>
+                        <li style="color: #a7a7a7">Copepods (zooplankton) are said to be the richest source of protein in the ocean.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item item-text-wrap">
+                <br />
+                <br />
+                <h1 style="text-align:center">WHY ARE PLANKTON IMPORTANT?</h1>
+                <hr style="outline-color:aqua" />
+                <br />
+                <div class="col-4 aqua-border-sharp" style ="overflow:hidden; min-width: 200px">
+
+                    <br />
+                    <h2 style="color:black; text-align: left"> Everything . . . </h2>
+                    <hr />
+
+                    <p style="color: #242f2e; text-align: justify">is somehow linked to plankton and it is important that we protect our oceans so that they can maintain their natural balance. </p>
+                    <br />
+                </div>
+               
+                <br/>
+                <div class="col-8" >
+                    <div>
+                        <h2>They Produce Oxygen We Breathe </h2>
+                        <p>Phytoplankton are sometimes called the grasses of the sea because they produce around 50% of the oxygen in the atmosphere through photosynthesis.</p>
+                        <p>During photosynthesis, phytoplankton use the sun's energy to combine carbon dioxide and water into simple foods. This process removes carbon dioxide from seawater, which allows the water to absorb carbon dioxide produced in the atmosphere as well as produce at least half of the oxygen we breathe.</p>
+
+                        <br />
+
+                        <h2>They are a Food Source for All</h2>
+                        <p>Plankton also serve as the nutritional basis for all animals that live in our oceans.They are primary producers that provide the first form of energy within marine food webs (Fig. 1).</p>
+                        <p>Phytoplankton are then consumed by zooplankton, which are known as primary consumers. These, in turn, become food for larger organisms such as bivalves, crustaceans, fish, and baleen whales. These fish and other animals then become food for animals near the top of the food chain, such as sharks, toothed whales, and humans.</p>
+                        <p>Without plankton, none of the larger fish or animals in the ocean could survive; the entire marine food web would collapse.</p>
+
+                    </div>
+                </div>
+
+                <br clear="all" />
+                <div class="col-4 aqua-border-sharp" style="width: {{bluWidth}}" >
+
+                    <br />
+                    <h2 style="color:black; text-align: left"> You can help protect plankton by: </h2>
+                    <hr />
+
+                    <ion-list >
+                        <ion-item><p style="font-size: 75%; color: #242f2e; text-align: left"> ~Decreasing pollution </p></ion-item>
+                        <ion-item><p style="font-size: 75%; color: #242f2e; text-align: left"> ~Using less energy </p></ion-item>
+                        <ion-item><p style="font-size: 75%; color: #242f2e; text-align: left"> ~Urging individuals and companies to stop destroying habitat on land and in the ocean </p></ion-item>
+                        <ion-item><p style="font-size: 75%; color: #242f2e; text-align: left"> ~Encouraging others to stop over-harvesting ocean wildlife </p></ion-item>
+
+                    </ion-list>
+                    <p style="margin:10px"><b> An important part of saving the ocean is working together and educating others.</b></p>
+                    <br />
+
+                </div>
+                <img class="col-8" src="img/Food_Chain.PNG" />
+
+                <div class="col-8">
+                    <h2>They Help the Oceans</h2>
+                    <p>Plankton play a role in the biogeochemical cycles of many important chemical elements, including the ocean's carbon cycle.
+                    <p>Some plankton play an important role in the disposal of sewage and in the natural purification of polluted water. Interestingly, plankton can also indicate the health of our oceans or the degree of pollution.</p>
+                    <p>The timing and production of plankton are dependent on water temperature and the availability of nutrients, which are normally well balanced and predictable throughout the seasons.</p>
+                    <p>The disturbance of one of these factors can have drastic effects on the plankton composition. Fertilizers used for agriculture can end up in the ocean and induce plankton blooms that are the consequence of a strong phytoplankton proliferation, but to the detriment of other organisms.</p>
+                    <p>Furthermore, several studies have shown that there exists a strong relationship between larval survival and production of plankton. Therefore, changes in the natural variation of plankton populations can affect fish populations.</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div style="height:5em; width:100%"> </div>
+    </ion-content>
+
+
+    <!--<ion-content scrollbar-x="false" scrollbar-y="true" has-bouncing="false">
+        <img ng-src='img/about-plankton.jpg' class="fullscreen-image" />
+        -->
+
+    <div class="button-bar" style="position:absolute; bottom: 1em; width: 85%; right: 7.5%; left:7.5%; opacity: 0.95">
+        <a href="#/app/gHome" class="button button-dark" style="color: white; background-color: #AC92EC">Discover</a>
+        <a href="#/app/memory" class="button button-royal" style="color: white; background-color: #48CFAD">Learn</a>
+        <a href="#/app/dichotomous" class="button button-positive" style="color: white; background-color: #4FC1E9">Identify</a>
+    </div>
+
+</ion-view>
+

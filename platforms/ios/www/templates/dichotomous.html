@@ -1,0 +1,56 @@
+﻿<ion-view view-title="Dichotomous Key">
+    <link rel="stylesheet" type="text/css" href="css/dichotomous.css">
+    
+    <ion-pane style="position: absolute; top: calc(100% - 204px); height: 204px">
+        <div  class="dBottomBox">
+            <h1> CHOOSE WHAT MATCHES YOUR PLANKTON'S APPEARANCE</h1>
+            <div class="button-bar" >
+                <a class="button button-calm" ng-click="back()">BACK</a>
+                <a class="button button-assertive" ng-click="restart()">RESTART</a>
+            </div>
+        </div>
+    </ion-pane>
+
+    
+    <ion-content ng-show="showScreenBool(0)" style="height: 100%">
+        
+        <ion-list style="overflow: initial; white-space: initial">
+
+            <div ng-repeat="option in currentQ.text" ng-click="updateQ($index)" style="margin-top:4%">
+                <div class="dContainer">
+                    <div class="dLeftBox">
+                        <p>{{option}}</p>
+                    </div>
+                    <div class="dRightBox"><img src="{{getImg($index)}}" /></div>
+                   
+                </div>
+                <div class="dDivider"></div>
+             </div>
+             <div style="height:40%; width: 100%; display: block; position: absolute"></div>
+        </ion-list>
+
+    </ion-content>
+
+    <ion-content ng-show="showScreenBool(1)" style="height: 100%">
+        <div class="targetContainer">
+            
+            <div class="leftBoxTarget">
+                <img src="img/KeahiKai.png" />
+            </div>
+            <div class="rightBoxTarget">
+                <h2> Congratulations! </h2>
+                <h2> Your plankton is a: </h2>
+            </div>
+            
+        </div> 
+
+        <div class="dDivider"></div>
+
+        <div class="target">
+            <h1> {{currentQ.target}}</h1>
+            <h4> {{currentQ.description}}</h4>
+            <img src="{{currentQ.img}}" />
+        </div>
+        <div style="height:50%; width: 100%; display: block; position: absolute"></div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,44 @@
+﻿<ion-view view-title="Card Match Home"  enable-menu-with-back-views="true" >
+    <link rel="stylesheet" type="text/css" href="css/game.css">
+    
+
+    <ion-content  scroll="false">
+        <br />
+        <br />
+        <div style="margin-left:20px; margin-right:20px; padding: 25px; overflow:auto; border: solid; border-width: 1px; border-color:aqua" >
+            <br />
+
+            <div class="aqua-border" style="">
+                <div class="cards" style="position: relative; float:left; margin:20px; width: {{deviceWidth/3}}px; height:{{deviceWidth/3}}px">
+                    <!--front of card-->
+                    <div style="position:absolute; left:0px; top:0px;  -webkit-transform:  rotateY( 180deg ) " class="back-setup">
+
+                        <img src="img/KeahiKai.png" style="width: {{deviceWidth/3}}px; height:{{deviceWidth/3}}px; left:0px; top:0px" />
+
+                    </div>
+
+                    <div style="position:absolute; left:0px;top:0px; background-color: aqua" class="front-setup">
+                        <img src="img/card_icon/medium/foram.jpg" style="width: {{deviceWidth/3}}px; height:{{deviceWidth/3}}px; left:0px; top:0px" />
+                    </div>
+
+                </div> <!-- end of card -->
+
+                <br />
+
+                <h1 style=" font-size: 35px; margin-top:10px; margin-bottom: 15px"> <b> Plankton Memory Match </b></h1>
+                <h3 style="font-size: 24px"> Match all {{globalTotalCards}} cards as fast as possible to increase your visual memory of plankton. </h3>
+                <p> {{getHighscore()}} </p>
+
+
+               <!-- <h2 text-align center> Highscore: 50  {{highscore}} </h2>
+                <p> Try to beat the fastest time in this game and get the high score!</p> -->
+                <br clear="all" />
+
+            </div>
+           <br clear="all" />
+        <a ng-click="logGameStartTime()" ng-href="#/app/game" class="button button-full button-calm"> <b>Start</b> </a>
+        </div>
+
+
+    </ion-content>
+</ion-view>
