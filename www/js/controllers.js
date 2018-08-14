@@ -561,6 +561,7 @@ angular.module('starter.controllers', ['ngSanitize'])
     }
 
     $scope.endGame = function() {
+        console.log("Running endgame() function")
 
         // remove game page -- back goes to game start
         $ionicHistory.removeBackView();

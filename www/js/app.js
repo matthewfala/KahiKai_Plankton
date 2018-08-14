@@ -115,7 +115,7 @@ angular.module('starter', ['ionic', 'ngAnimate', 'starter.controllers'])
             'menuContent': {
                 cache: false,
                 templateUrl: 'templates/gFinal.html',
-                controller: 'GameCtrl'
+                controller: 'endgamectrl'
             }
 
         }
