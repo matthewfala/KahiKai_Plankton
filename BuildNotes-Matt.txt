@@ -1,0 +1,8 @@
+KahiKai Plankton, GitHub Edition
+
+The KahiKai_Plankton is a repo for the KahiKai Plankton App. It backs up all versions above version 5.1
+
+Creation: 8/13/2018 (Version 5.1)
+Change Log ---
+
+
