@@ -1,4 +1,4 @@
-﻿<ion-view view-title="Card Match Home" ng-init="endGame()" >
+﻿<ion-view view-title="Card Match Home"  enable-menu-with-back-views="true">
     <link rel="stylesheet" type="text/css" href="css/game.css">
 
     <ion-content >
@@ -31,21 +31,21 @@
                     <br />
 
                     <div class="congratsRightBox">
-
-                        <h1 style="text-align:left"> <b> Great Job! </b></h1>
+                        <p></p>
+                        <h1 style="text-align:left" style=""> <b> Great Job! </b></h1>
 
                         <h4 style="padding: 20px 0 0px 0; text-align:justify"> You just matched {{globalTotalCards}} plankton cards in <b> {{gameMinutes}} minutes </b> and <b> {{gameSeconds}} seconds.</b> </h4>
 
                         <h5> Play again, or learn about the plankton you just matched.</h5>
                         <br/>
-                        <a ng-click="{{newGame()}}" ng-href='#/app/gHome' class="button button-calm" menu-close> REMATCH </a>
-                        <a ng-click="{{newGame()}}" ng-href='#/app/memory' class="button button-positive" menu-close> LEARN PLANKTON </a>
+                        <a ng-href='#/app/gHome' class="button button-calm" menu-close> REMATCH </a>
+                        <a ng-href='#/app/memory' class="button button-positive" menu-close> LEARN PLANKTON </a>
 
                     </div>
 
 
                 </div>
-
+                
             </div>
 
 
@@ -54,7 +54,7 @@
         <div class="card">
 
             <div class ="scoreBoard">
-                <h2> Scoreboard <span class="grayText" ng-if="newHighscore"> - New Best Time! </h2>
+                <h2> Scoreboard <span class="grayText" ng-if="newHighscore"> - New Record!  </span> </h2>
                 
                  
                 <div class = "fastest">

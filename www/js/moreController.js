@@ -17,14 +17,21 @@
 
 })
 
+
 .controller('moreCtrl', function ($scope, $sce, moreCard) {
-    $scope.onload = function () {
+
+    // Run with ng-init, before view is setup
+    $scope.linkCard = function() {
         $scope.moreCard = moreCard.getMore(); // moreCard;
+    }
+
+    // Before Entering Page
+    $scope.$on('$ionicView.beforeEnter', function() {
         $scope.morePane = $sce.trustAsHtml(buildMoreHtmlPane($scope.moreCard));
         $scope.moreContent = $sce.trustAsHtml(buildMoreHtmlContent($scope.moreCard));
-        
-    };
+    });
 
+    // Relocate to a service/factory function if list gets longer
     var definitions = [
         { key: "unicellular", value: "Single-celled organisms including bacteria, archaea, protozoa, and unicellular algae" },
         { key: "metazoa", value: "Multicellular, eukaryotic organisms of the kingdom animalia; multicellular animals" },
@@ -97,9 +104,6 @@
         html = html + '<div class="info general"> <div class="leftBox"> <h3>Web</h3> <h2>Food Web</h2> </div> <div class= "rightBox"> <p>' + card.web + '</p> </div> </div> ';
 
         html = html + '<div class="info general"> <div class="leftBox"> <h3>Habitat</h3> <h2> Description </h2> </div> <div class= "rightBox"> <p>' + card.habitat + '</p> </div> </div> ';
-
-
-
 
         if (card.uni == true) {
             html = html + '<div class="info" id="category"> <div class="leftBox"> <h3>Unicellular</h3> <h2>Category</h2> </div> <div class= "rightBox"> <p>' + findDef("unicellular") + '</p> </div> </div> ';

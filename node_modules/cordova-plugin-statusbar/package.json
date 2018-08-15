@@ -1,33 +1,33 @@
 {
-  "_from": "cordova-plugin-statusbar@2.2.1",
-  "_id": "cordova-plugin-statusbar@2.2.1",
+  "_from": "cordova-plugin-statusbar@2.4.2",
+  "_id": "cordova-plugin-statusbar@2.4.2",
   "_inBundle": false,
-  "_integrity": "sha1-tRwOGqsrpm7bd85SvyuT/IBsjHA=",
+  "_integrity": "sha1-/B+9wNjXAzp+jh8ff/FnrJvU+vY=",
   "_location": "/cordova-plugin-statusbar",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "cordova-plugin-statusbar@2.2.1",
+    "raw": "cordova-plugin-statusbar@2.4.2",
     "name": "cordova-plugin-statusbar",
     "escapedName": "cordova-plugin-statusbar",
-    "rawSpec": "2.2.1",
+    "rawSpec": "2.4.2",
     "saveSpec": null,
-    "fetchSpec": "2.2.1"
+    "fetchSpec": "2.4.2"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-statusbar/-/cordova-plugin-statusbar-2.2.1.tgz",
-  "_shasum": "b51c0e1aab2ba66edb77ce52bf2b93fc806c8c70",
-  "_spec": "cordova-plugin-statusbar@2.2.1",
-  "_where": "/Volumes/Extreme 500/KahiKaiBuilds/ToApple/KahiKai_Plankton_Version5.0x",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-statusbar/-/cordova-plugin-statusbar-2.4.2.tgz",
+  "_shasum": "fc1fbdc0d8d7033a7e8e1f1f7ff167ac9bd4faf6",
+  "_spec": "cordova-plugin-statusbar@2.4.2",
+  "_where": "/Volumes/Extreme 500/KahiKai/SourceCode/KahiKai_Plankton_GitHub",
   "author": {
     "name": "Apache Software Foundation"
   },
   "bugs": {
-    "url": "https://github.com/apache/cordova-plugin-statusbar/issues"
+    "url": "https://issues.apache.org/jira/browse/CB"
   },
   "bundleDependencies": false,
   "cordova": {
@@ -76,5 +76,6 @@
     "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests",
     "test": "npm run jshint"
   },
-  "version": "2.2.1"
+  "types": "./types/index.d.ts",
+  "version": "2.4.2"
 }

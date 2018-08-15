@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
-		1418286D591349338B8DD470 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF99BAD8C354EE88238F8DD /* CDVViewController+SplashScreen.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
-		41B66130365C49D2BC4AB366 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B22660688E54481B479CDA5 /* CDVDevice.m */; };
-		68EC87C6FFB043F3A68F84CB /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BBE0C0FC6540218563EC80 /* CDVSplashScreen.m */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		BF277F30BB9A47C3B31F31D9 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E09B59035F0468983D0FE0E /* IonicKeyboard.m */; };
-		C3AFB39358D14F2DBF7FE987 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4AC74D974346F4BAEB5BF1 /* CDVStatusBar.m */; };
+		B051166DE4464DCC8330CDE5 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B54BB7FD64F53AA761D29 /* CDVViewController+SplashScreen.m */; };
+		BF3375C48BAA409387950A2B /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E20064B5F504AADBF4A27D0 /* IonicKeyboard.m */; };
+		F2EB559CD13E4BDD8F8E55E9 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 386BF9F2C2CB483C9CFF05F2 /* CDVSplashScreen.m */; };
+		F85F317BA4A24599A6668CDB /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D9F28E432240E5B05E71B3 /* CDVStatusBar.m */; };
+		FAE3AF88D29D4249959CA306 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1A8CD0BD794896B265E39B /* CDVDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1DB374851FF5AD49005D8031 /* PBXContainerItemProxy */ = {
+		1D04C2462123AEBC00F63AE8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
 			proxyType = 2;
@@ -51,7 +51,6 @@
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* Kahi Kai Plankton: Guide of the Oceans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kahi Kai Plankton: Guide of the Oceans.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2CB6C84A529D457A96C4AC5B /* IonicKeyboard.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = IonicKeyboard.h; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -61,21 +60,22 @@
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
 		32CA4F630368D1EE00C91783 /* Kahi Kai Plankton: Guide of the Oceans-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Kahi Kai Plankton: Guide of the Oceans-Prefix.pch"; sourceTree = "<group>"; };
-		39BBE0C0FC6540218563EC80 /* CDVSplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVSplashScreen.m; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; };
-		450013066F1546758778246D /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; };
-		4B22660688E54481B479CDA5 /* CDVDevice.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; };
+		386BF9F2C2CB483C9CFF05F2 /* CDVSplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVSplashScreen.m; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; };
+		3958650EC8F2462297639BB2 /* CDVSplashScreen.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVSplashScreen.h; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; };
+		3E20064B5F504AADBF4A27D0 /* IonicKeyboard.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IonicKeyboard.m; path = "ionic-plugin-keyboard/IonicKeyboard.m"; sourceTree = "<group>"; };
+		4B2F469590854559AF21C415 /* CDVDevice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
+		5E1A8CD0BD794896B265E39B /* CDVDevice.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = "Kahi Kai Plankton: Guide of the Oceans/CDVLaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
-		7E09B59035F0468983D0FE0E /* IonicKeyboard.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IonicKeyboard.m; path = "ionic-plugin-keyboard/IonicKeyboard.m"; sourceTree = "<group>"; };
-		7EDBA37F9627446BADC8808D /* CDVSplashScreen.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVSplashScreen.h; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; };
-		82E710CF226349F8A015E3EB /* CDVStatusBar.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVStatusBar.h; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; };
-		8A4AC74D974346F4BAEB5BF1 /* CDVStatusBar.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVStatusBar.m; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Kahi Kai Plankton: Guide of the Oceans-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Kahi Kai Plankton: Guide of the Oceans-Info.plist"; path = "Kahi Kai Plankton: Guide of the Oceans/Kahi Kai Plankton: Guide of the Oceans-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
-		DFF99BAD8C354EE88238F8DD /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; };
+		8F619EA4DDE045AA99A02937 /* CDVStatusBar.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVStatusBar.h; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; };
+		990DEB14F68243E883A705FA /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; };
+		C227115579E84835B8B65030 /* IonicKeyboard.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = IonicKeyboard.h; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; };
+		E10B54BB7FD64F53AA761D29 /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Kahi Kai Plankton: Guide of the Oceans/config.xml"; sourceTree = "<group>"; };
-		FDC2750829C34C558EED262D /* CDVDevice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
+		F8D9F28E432240E5B05E71B3 /* CDVStatusBar.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVStatusBar.m; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				301BF535109A57CC0062928A /* libCordova.a */,
-				1DB374861FF5AD49005D8031 /* Cordova.framework */,
+				1D04C2472123AEBC00F63AE8 /* Cordova.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,16 +180,16 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				7E09B59035F0468983D0FE0E /* IonicKeyboard.m */,
-				2CB6C84A529D457A96C4AC5B /* IonicKeyboard.h */,
-				8A4AC74D974346F4BAEB5BF1 /* CDVStatusBar.m */,
-				82E710CF226349F8A015E3EB /* CDVStatusBar.h */,
-				4B22660688E54481B479CDA5 /* CDVDevice.m */,
-				FDC2750829C34C558EED262D /* CDVDevice.h */,
-				39BBE0C0FC6540218563EC80 /* CDVSplashScreen.m */,
-				DFF99BAD8C354EE88238F8DD /* CDVViewController+SplashScreen.m */,
-				7EDBA37F9627446BADC8808D /* CDVSplashScreen.h */,
-				450013066F1546758778246D /* CDVViewController+SplashScreen.h */,
+				5E1A8CD0BD794896B265E39B /* CDVDevice.m */,
+				4B2F469590854559AF21C415 /* CDVDevice.h */,
+				386BF9F2C2CB483C9CFF05F2 /* CDVSplashScreen.m */,
+				E10B54BB7FD64F53AA761D29 /* CDVViewController+SplashScreen.m */,
+				3958650EC8F2462297639BB2 /* CDVSplashScreen.h */,
+				990DEB14F68243E883A705FA /* CDVViewController+SplashScreen.h */,
+				F8D9F28E432240E5B05E71B3 /* CDVStatusBar.m */,
+				8F619EA4DDE045AA99A02937 /* CDVStatusBar.h */,
+				3E20064B5F504AADBF4A27D0 /* IonicKeyboard.m */,
+				C227115579E84835B8B65030 /* IonicKeyboard.h */,
 			);
 			name = Plugins;
 			path = "Kahi Kai Plankton: Guide of the Oceans/Plugins";
@@ -262,11 +262,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		1DB374861FF5AD49005D8031 /* Cordova.framework */ = {
+		1D04C2472123AEBC00F63AE8 /* Cordova.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Cordova.framework;
-			remoteRef = 1DB374851FF5AD49005D8031 /* PBXContainerItemProxy */;
+			remoteRef = 1D04C2462123AEBC00F63AE8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		301BF535109A57CC0062928A /* libCordova.a */ = {
@@ -317,11 +317,11 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				BF277F30BB9A47C3B31F31D9 /* IonicKeyboard.m in Sources */,
-				C3AFB39358D14F2DBF7FE987 /* CDVStatusBar.m in Sources */,
-				41B66130365C49D2BC4AB366 /* CDVDevice.m in Sources */,
-				68EC87C6FFB043F3A68F84CB /* CDVSplashScreen.m in Sources */,
-				1418286D591349338B8DD470 /* CDVViewController+SplashScreen.m in Sources */,
+				FAE3AF88D29D4249959CA306 /* CDVDevice.m in Sources */,
+				F2EB559CD13E4BDD8F8E55E9 /* CDVSplashScreen.m in Sources */,
+				B051166DE4464DCC8330CDE5 /* CDVViewController+SplashScreen.m in Sources */,
+				F85F317BA4A24599A6668CDB /* CDVStatusBar.m in Sources */,
+				BF3375C48BAA409387950A2B /* IonicKeyboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +342,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -356,7 +355,6 @@
 				INFOPLIST_FILE = "Kahi Kai Plankton: Guide of the Oceans/Kahi Kai Plankton: Guide of the Oceans-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.kahikai.plankton2;
 				PRODUCT_NAME = "Kahi Kai Plankton: Guide of the Oceans";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -368,7 +366,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -380,7 +377,6 @@
 				INFOPLIST_FILE = "Kahi Kai Plankton: Guide of the Oceans/Kahi Kai Plankton: Guide of the Oceans-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.kahikai.plankton2;
 				PRODUCT_NAME = "Kahi Kai Plankton: Guide of the Oceans";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -409,6 +405,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -434,6 +431,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

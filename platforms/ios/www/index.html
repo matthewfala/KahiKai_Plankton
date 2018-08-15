@@ -2,7 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <!-- Added viewport-fit=cover in v5.1 -->
+    <meta name="viewport" content="viewport-fit=cover, initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    
     <title></title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
@@ -28,16 +30,20 @@
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
 
-    <!-- factory js-->
-    <script src="js/plankton.js"></script>
-    <script src="js/gallery.js"></script>
-    <script src="js/dichotomous_Questions.js"></script>
+    <script src="js/GameEnd.controller.js"></script>
+    <script src="js/GameStart.controller.js"></script>
+    <script src="js/GamePlay.controller.js"></script>
 
-    <script src="js/dichotomous.js"></script>
+    <!-- factory js-->
+    <script src="js/Cards.service.js"></script>
+    <script src="js/gallery.js"></script>
+    
+    <script src="js/Key.service.js"></script>
+    <script src="js/Key.controller.js"></script>
     <script src="js/moreController.js"></script>
     <script src="js/galleryController.js"></script>
 
-
+    
   </head>
 
   <body ng-app="starter" class="platform-ios platform-cordova platform-webview">

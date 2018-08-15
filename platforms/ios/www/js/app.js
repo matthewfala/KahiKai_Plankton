@@ -92,7 +92,7 @@ angular.module('starter', ['ionic', 'ngAnimate', 'starter.controllers'])
             'menuContent': {
                 cache: false,
                 templateUrl: 'templates/game.html',
-                controller: 'GameCtrl'
+                controller: 'GamePlayCtrl'
             }
 
         }
@@ -103,7 +103,7 @@ angular.module('starter', ['ionic', 'ngAnimate', 'starter.controllers'])
         views: {
             'menuContent': {
                 templateUrl: 'templates/gHome.html',
-                controller: 'GameCtrl'
+                controller: 'GameStartCtrl'
             }
 
         }
@@ -115,7 +115,18 @@ angular.module('starter', ['ionic', 'ngAnimate', 'starter.controllers'])
             'menuContent': {
                 cache: false,
                 templateUrl: 'templates/gFinal.html',
-                controller: 'GameCtrl'
+                controller: 'GameEndCtrl'
+            }
+
+        }
+    })
+
+    .state('app.dichotomousIntro', {
+        url: '/dichotomousIntro',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/dichotomousIntro.html',
+                controller: 'dichotomousCtrl'
             }
 
         }
