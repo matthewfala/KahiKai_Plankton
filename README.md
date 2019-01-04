@@ -7,7 +7,7 @@ An education app built for Kahi Kai, an international non-profit, to teach K-12 
 
 Matthew Fala
 
-## App Store Link
+## Find it on the App Store
 https://itunes.apple.com/us/app/kahi-kai-plankton/id1148336854?mt=8
 
 ## Issues
